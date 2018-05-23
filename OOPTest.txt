@@ -1,0 +1,104 @@
+
+//The interface that declares the footballer
+public interface Footballer{
+
+   public void run();
+   public void shoot();
+
+}
+
+//The abstract class that implements the Football interface
+public abstract class Player implements Football{
+
+    //The definition of the run method
+    public void run(){
+     prints= Player runs normally
+    }
+
+    public abstract void shoot();
+}
+
+
+//One of the classes that uses the run and the shoot methods
+public class Messi extends Player implements Footballer{
+
+    //Default constructor for the class
+    public GoodPlayer(){
+    }
+
+    //This is how the class uses the run method
+    public void run(){
+    Prints = The player runs fast enough
+    }
+
+     public static void shoot(Ball ball){
+     Prints = the ball has been played into the goal post with his left foot
+     }
+}
+
+//Another class that uses the abstract class and the interface above
+public class Ronaldo extends Player implements Footballer{
+
+     //Default constructor for the class
+     public BadPlayer(){
+     }
+
+     //Using the run method in this class
+     public static void run(){
+     Prints = Player runs fast and normal;
+     }
+  
+     //Using the shoot method
+     public static void shoot(Ball ball, Dribble dribble){
+     Prints = stylishly plays the ball and misses it;
+     }     
+}
+
+//Creating the ball class     
+public class Ball{
+
+    //Defining a default constructor
+    public Ball(){
+    }
+    
+    // The method that the class works with
+    public static void action(){
+    Prints = Oh! I'v been kicked;
+    }
+}
+
+
+//Creating and defining the action of the Dribble class
+public class Dribble{
+ 
+    //Defining a default constructor    
+    public Dribble(){
+    }
+     
+    public static void action(){
+    Stylishly plays the ball and removes opposing players from the way
+    }
+
+}
+
+
+
+//The main class that bears the main method
+
+public class PlayBall{
+   
+    //The main method for the program
+    public static void main(String[] args){
+    
+    Ball ball1 = new Ball();
+    Dribble badDribble = new Dribble
+    
+    
+    GoodPlayer.shoot(ball1);
+    BadPlayer.shoot(ball1,badDribble);
+
+
+    }
+
+}    
+        
